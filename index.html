@@ -71,16 +71,18 @@ anecdotes ++
 				</section>
 				<section>
 					<h3>De quoi va-t-on parler ?</h3>
-					<ul class="r-stretch">
-						<!-- TODO à rendre plus esthétique -->
-						<li>Les équipes & métiers</li>
-						<li>L’organisation</li>
-						<li>Les outils</li>
-					</ul>
+					<ol class="r-stretch">
+						<li>La sécurité offensive</li>
+						<li>La sécurité défensive</li>
+						<li>Le SOC</li>
+						<li>Le CSIRT</li>
+						<li>Le RIC</li>
+						<li>La fusion des services</li>
+					</ol>
 					<p style="font-size:large;"><em>NB : le monde de la SSI reste récent et ses métiers évoluent
 							rapidement !<br />NB2 : autant que possible cette présentation est en français ; ça peut
 							surprendre.<br />NB3 : les métiers présentés n'existent pas tous dans toutes les structures,
-							ça dépend des moyens et missions de chacune !</em></p>
+							ça dépend des moyens et missions de chacune</em></p>
 					<aside class="notes">
 						métiers évoluent : mais aussi définitions (red team & blue team définis par le gov US en 2015,
 						proposition de cherchers d'ajouter yellow en 2017)
@@ -98,7 +100,7 @@ anecdotes ++
 			</section>
 			<section>
 				<section data-background-color="#9a031e">
-					<h1 class="r-fit-text">La sécurité offensive</h1>
+					<h1 class="r-fit-text">1. La sécurité offensive</h1>
 				</section>
 				<section data-background-color="#9a031e">
 					<h3>Missions</h3>
@@ -168,7 +170,7 @@ anecdotes ++
 			</section>
 			<section>
 				<section data-background-color="#fff">
-					<h1 style="color:#118ab2" class="r-fit-text">La sécurité défensive</h1>
+					<h1 style="color:#118ab2" class="r-fit-text">2. La sécurité défensive</h1>
 				</section>
 				<section data-background-color="#118ab2">
 					<h3>Missions</h3>
@@ -192,17 +194,11 @@ anecdotes ++
 						participatif & évolutif (dernière grosse mise à jour fin 2020)
 					</aside>
 				</section>
-				<section data-background-color="#fff">
-					<img data-src="https://4.bp.blogspot.com/-EDLbyYipz_E/UtnWN7fdGcI/AAAAAAAANno/b4UX5wjNdh0/s1600/Pyramid+of+Pain+v2.png"
-						alt="pyramid of pain" />
-					<aside class="notes">
-						difficulté à changer => plus facile de détecter & identifier
-					</aside>
-				</section>
 			</section>
 			<section>
 				<section data-background-color="#118ab2">
-					<h1 class="r-fit-text">Le SOC</h1>
+					<h1 class="r-fit-text">3. Le SOC</h1>
+					<em>Security Operations Center</em>
 				</section>
 				<section data-background-color="#000">
 					<p>collecte de journaux<br />définition de scénarios offensifs<br />création de règles de
@@ -217,8 +213,8 @@ anecdotes ++
 					<div class="r-stack r-stretch">
 						<div class="fragment fade-in-then-out">
 							<h3>Le SIEM</h3>
+							<em>Security Information and Event Management</em>
 							<div class="r-stretch">
-								<p>Security Information Event Management</p>
 								<img data-src="/collecte siem.svg" />
 							</div>
 						</div>
@@ -243,50 +239,32 @@ anecdotes ++
 							alt="logrhythm" />
 
 					</div>
+					<aside class="notes">
+						Expliquer MFA
+						TODO voir si plateforme visio a un tableau blanc où je peux écrire (ex: MFA = multi factor auth)
+						exemple solarwinds TODO détection MFA
+					</aside>
 				</section>
 				<section data-background-color="#fff">
 					<h3>Le SIRP</h3>
-					<p>Security Incident Response Platform</p>
+					<em>Security Incident Response Platform</em>
 					<img class="r-stretch"
 						data-src="https://blogthehiveproject.files.wordpress.com/2017/02/current_cases.png" />
 				</section>
 				<section data-background-color="#fff">
 					<h3>Le SOAR</h3>
-					<p>Security Orchestration Automation & Response</p>
+					<em>Security Orchestration Automation & Response</em>
 					<img class="r-stretch"
 						data-src="https://live.paloaltonetworks.com/t5/image/serverpage/image-id/26218iCB4297592CC5448F/image-size/large?v=1.0&px=999" />
 				</section>
 			</section>
 			<section>
 				<section data-background-color="#118ab2">
-					<h1 class="r-fit-text">Le CSIRT</h1>
+					<h1 class="r-fit-text">4. Le CSIRT</h1>
+					<em>Computer Security Incident Response Team</em>
 				</section>
 				<section data-background-color="#fff">
 					<img class="r-stretch" data-src="/investigations.svg" />
-					<aside class="notes">
-						<p>ex 1 : TODO</p>
-						<p>ex 2 : TODO</p>
-						<p>collecte bas niveau (proche de la donnée) pour ne pas rater un attaquant. ex: rootkit</p>
-					</aside>
-				</section>
-				<section data-background-color="#118ab2">
-					<h3>La collecte</h3>
-					<div class="r-stack r-stretch">
-						<img class="fragment fade-in-then-out"
-							data-src="https://static.wixstatic.com/media/3ea93c_bbd7d2838b4f4c5fb67b3912ca233a2a.png/v1/fill/w_419,h_113,al_c,q_85,usm_0.66_1.00_0.01/3ea93c_bbd7d2838b4f4c5fb67b3912ca233a2a.webp" />
-						<img class="fragment fade-in-then-out" data-src="https://dfir-orc.github.io/_static/logo.jpg" />
-						<p class="fragment fade-in-then-out"><a target="_blank"
-								href="https://github.com/SekoiaLab/fastir_artifacts">FastIR</a></p>
-						<img class="fragment fade-in-then-out"
-							data-src="https://accessdata.com/assets/images/FTK-7.4-webinar_thumbnail.JPG" />
-						<p class="fragment fade-in-then-out"><a target="_blank" href="https://osquery.io/">osquery</a>
-						</p>
-						<img class="fragment fade-in-then-out"
-							data-src="https://i1.wp.com/securityaffairs.co/wordpress/wp-content/uploads/2016/03/cellebrite-ufed-touch.png" />
-					</div>
-				</section>
-				<section data-auto-animate data-background-color="#118ab2">
-					<h3 class="r-fit-text">L'investigation</h3>
 					<aside class="notes">
 						<p>Similaire à une enquête de police</p>
 						<ul>
@@ -296,39 +274,44 @@ anecdotes ++
 								temporalité / périmètre / impacts)</li>
 							<li>Pivot</li>
 						</ul>
+						<p>collecte bas niveau (proche de la donnée) pour ne pas rater un attaquant. ex: rootkit</p>
 					</aside>
 				</section>
-				<section data-auto-animate data-background-color="#118ab2">
+				<section data-background-color="#118ab2">
+					<div class="r-stack">
+						<div class="fragment fade-in-then-out">
+							<h3>La collecte − Réseau</h3>
+							<div class="r-stretch"><img
+									data-src="https://static.wixstatic.com/media/3ea93c_bbd7d2838b4f4c5fb67b3912ca233a2a.png/v1/fill/w_419,h_113,al_c,q_85,usm_0.66_1.00_0.01/3ea93c_bbd7d2838b4f4c5fb67b3912ca233a2a.webp"
+									alt="TAP" /></div>
+							<aside class="notes">NSA qui tape des câbles sous-marins</aside>
+						</div>
+						<div class="fragment fade-in-then-out">
+							<h3>L'analyse − Réseau</h3><!-- TODO demo -->
+							<div class="r-stretch"><img
+									data-src="https://www.bleepstatic.com/images/news/u/1109292/Feb%202019/Wireshark%203_0_0.PNG"
+									alt="wireshark" /></div>
+						</div>
+						<div class="fragment fade-in-then-out">
+							<h3>Systèmes</h3>
+							<div class="r-stretch"><img
+									data-src="https://accessdata.com/assets/images/FTK-7.4-webinar_thumbnail.JPG"
+									alt="FTK" /></div>
+						</div>
+						<div class="fragment fade-in-then-out">
+							<h3>Mémoire</h3>
+							<div class="r-stretch"><img
+									data-src="TODO"
+									alt="Volatility" /></div>
+						</div>
+						<div class="fragment fade-in-then-out">
+							<h3>Mobiles</h3>
+							<div class="r-stretch"><img
+									data-src="https://i1.wp.com/securityaffairs.co/wordpress/wp-content/uploads/2016/03/cellebrite-ufed-touch.png"
+									alt="UFED" /></div>
+						</div>
 
-					<h3>L'investigation</h3>
-					<img
-						data-src="https://www.bleepstatic.com/images/news/u/1109292/Feb%202019/Wireshark%203_0_0.PNG" />
-				</section>
-
-				<section data-auto-animate data-background-color="#118ab2">
-
-					<h3>L'investigation</h3>
-					<a target="_blank" href="https://github.com/log2timeline/plaso">Plaso (log2timeline)</a>
-				</section>
-				<section data-auto-animate data-background-color="#118ab2">
-
-					<h3>L'investigation</h3>
-					<a target="_blank"
-						href="https://github.com/volatilityfoundation/volatility">Volatility</a>&nbsp;|&nbsp;Rekall
-				</section>
-
-				<section data-background-interactive data-preload
-					data-background-iframe="https://ericzimmerman.github.io/">
-					<img class="fragment" data-src="https://aboutdfir.com/wp-content/uploads/MFTExplorerLoneWolf.png" />
-					<aside class="notes">
-						exemple MFT :
-						- liste des fichiers (ntfs)
-						- plus d'infos que dans l'explorateur (exemple dossiers spéciaux)
-						- fichiers supprimés
-						- dates & timestomping
-						- nécessite bonne connaissances OS (différentes versions)
-					</aside>
-				</section>
+					</div>
 				<section data-auto-animate>
 					<h3 class="r-fit-text">La rétro ingénierie</h3>
 				</section>
@@ -365,7 +348,11 @@ anecdotes ++
 			</section>
 			<section>
 				<section data-background-color="#1b2226">
-					<h1 class="r-fit-text">Le Renseignement d'intérêt cyber</h1>
+					<h1 class="r-fit-text">5. Le Renseignement d'intérêt cyber</h1>
+					<em>CTI : Cyber Threat Intelligence</em>
+				</section>
+				<section>
+					Missions TODO
 				</section>
 				<section>
 					<h3>Beaucoup d'outils d'analyse</h3>
@@ -405,7 +392,7 @@ anecdotes ++
 			</section>
 			<section>
 				<section>
-					<h1 class="r-fit-text">Comment tout ça s'assemble?</h1>
+					<h1 class="r-fit-text">6. Comment tout ça s'assemble?</h1>
 				</section>
 				<section>
 					<h3>Le Cyber Fusion Center</h3>
