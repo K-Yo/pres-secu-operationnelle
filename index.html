@@ -62,14 +62,14 @@ anecdotes ++
 						<li><img data-src="/house.svg"
 								style="vertical-align:bottom;height:0.9em;" /> <i>Opérationnel</i> depuis 2015</li>
 						<li><img data-src="/padlock-1.svg" style="vertical-align:bottom;height:0.9em;" /> Réponse aux
-							incidents chez <img data-src="https://upload.wikimedia.org/wikipedia/fr/d/d9/ANSSI_Logo.svg"
-								style="vertical-align:bottom;height:1em;" /></li>
+							incidents chez <img data-src="ANSSI_Logo.svg" style="vertical-align:bottom;height:1em;" />
+						</li>
 						<li><img data-src="/magnifying-glass.svg" style="vertical-align:bottom;height:0.9em;" /> SOC
-							chez <img data-src="https://www.intrinsec.com/wp-content/uploads/Logo_Isec-site-gauche.png"
-								style="vertical-align:bottom;height:1em;" /></li>
+							chez <img data-src="Logo_Isec-site-gauche.png" style="vertical-align:bottom;height:1em;" />
+						</li>
 					</ul>
 				</section>
-				<section>
+				<section data-auto-animate>
 					<h3>De quoi va-t-on parler ?</h3>
 					<ol class="r-stretch">
 						<li>La sécurité offensive</li>
@@ -79,14 +79,31 @@ anecdotes ++
 						<li>Le RIC</li>
 						<li>La fusion des services</li>
 					</ol>
-					<p style="font-size:large;"><em>NB : le monde de la SSI reste récent et ses métiers évoluent
-							rapidement !<br />NB2 : autant que possible cette présentation est en français ; ça peut
-							surprendre.<br />NB3 : les métiers présentés n'existent pas tous dans toutes les structures,
-							ça dépend des moyens et missions de chacune</em></p>
+					<p style="font-size:large;"><em>NB : autant que possible cette présentation est en français ; ça
+							peut
+							surprendre.</em></p>
 					<aside class="notes">
 						métiers évoluent : mais aussi définitions (red team & blue team définis par le gov US en 2015,
 						proposition de cherchers d'ajouter yellow en 2017)
 					</aside>
+				</section>
+				<section data-auto-animate>
+					<h3>De quoi va-t-on parler ?</h3>
+					<p class="">
+						L'organisation<br />
+						Les métiers<br />
+						<em style="font-size:large;">les métiers présentés n'existent pas tous dans toutes les
+							structures,
+							ça dépend des moyens et missions de chacune</em><br />
+						Des outils<br />
+						<em style="font-size:large;">Il y a beaucoup trop d'outils pour être exhaustifs ici, des
+							exemples emblématiques ont été choisis</em>
+					</p>
+					<aside class="notes">NB : le monde de la SSI reste récent et ses métiers évoluent
+						rapidement !<br />NB2 : </em></p>
+						<aside class="notes">
+
+						</aside>
 				</section>
 				<section>
 					<h3>Les opérations en SSI</h3>
@@ -98,11 +115,11 @@ anecdotes ++
 					</ul>
 				</section>
 			</section>
-			<section>
-				<section data-background-color="#9a031e">
+			<section data-background-color="#9a031e">
+				<section>
 					<h1 class="r-fit-text">1. La sécurité offensive</h1>
 				</section>
-				<section data-background-color="#9a031e">
+				<section>
 					<h3>Missions</h3>
 					<ul>
 						<li>Évaluer le niveau de sécurité d'un SI</li>
@@ -110,26 +127,27 @@ anecdotes ++
 						<li>Test d'Intrusion : périmètre défini</li>
 						<li>Red Team : comportement identique à celui d'un attaquant</li>
 					</ul>
+					<aside class="notes">
+						rythme projet, missions ponctuelles d'une durée définie
+					</aside>
 				</section>
-				<section data-background-color="#9a031e">
+				<section>
 					<h3>Red Team</h3>
 					<ul>
 						<li>Ingénierie Sociale</li>
 						<li>Pénétration physique</li>
 						<li>Exploitation de vulnérabilités</li>
-						<li></li>
-						<li></li>
 					</ul>
 					<aside class="notes">
-						SE : clé USB dans parking, phishing, hack badges navigo pour distribuer ailleurs
-						phishing ciblé
-						Physique : crochetage, vol de clés et badges d'
+						SE : clé USB dans parking, hameçonnage, harponnage
+						Physique : crochetage, vol de clés et badges d'accès
 						Vulns : systèmes pas à jour
 					</aside>
 				</section>
-				<section data-background-color="#000">
+				<section>
 					<div class="r-stack">
 						<p class="r-fit-text">&nbsp;Qui ?&nbsp;</p>
+						<!-- TODO sondage wooclap avec plusieurs images (ces deux là + qqn en costard + qqn casual qui a l'air sympa)-->
 						<img class="fragment fade-in-then-out"
 							src="https://cdn.pixabay.com/photo/2019/04/29/09/33/anonymous-4165613_1280.jpg"
 							alt="hacker" />
@@ -140,27 +158,27 @@ anecdotes ++
 				</section>
 				<section data-background-color="#fff">
 					<h3>La <i>Cyber Kill Chain</i></h3>
-					<img class="r-stretch"
-						data-src="https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/photo/cyber/THE-CYBER-KILL-CHAIN-body.png.pc-adaptive.full.medium.png"
-						alt="unified kill chain" />
+					<img class="r-stretch" data-src="THE-CYBER-KILL-CHAIN-body.png.pc-adaptive.full.medium.png"
+						alt="cyber kill chain" />
 					<aside class="notes">
-						Lockheed Martin
+						Lockheed Martin<br />
+						exemple: arnaque au président avec simulation de voix<br />
 						Théorisation de méthodes hétérogènes. attaque = cible & contraintes
 					</aside>
 				</section>
-				<section data-background-color="#fff">
+				<section>
 					<h3>Quelques outils</h3>
 					<div class="r-stack r-stretch">
-						<img class="fragment fade-in-then-out" data-src="nessus.png" />
-						<img class="fragment fade-in-then-out"
-							data-src="https://www.softwareone.it/public/layout/uploads/2019/11/burpsuite-gui.png" />
-						<img class="fragment fade-in-then-out" data-src="mimikatz.png" />
-						<img class="fragment fade-in-then-out" data-src="jtr.png" />
-						<img class="fragment fade-in-then-out" data-src="aircrack.gif" />
-						<img class="fragment fade-in-then-out"
-							data-src="https://upload.wikimedia.org/wikipedia/commons/5/59/Metasploit.png" />
-						<a class="fragment fade-in-then-out" target="_blank"
-							href="https://tools.kali.org/tools-listing">https://tools.kali.org/tools-listing</a>
+						<!-- TODO wooclap lien outil/but (mimikatz, jtr, aircrack, nessus, etc.)-->
+						<div class="fragment fade-in-then-out">
+							<h5>Metasploit</h5>
+							<img data-src="Metasploit.png" />
+						</div>
+						<div class="fragment fade-in-then-out">
+							<h5>Kali Linux</h5>
+							<a target="_blank"
+								href="https://tools.kali.org/tools-listing">https://tools.kali.org/tools-listing</a>
+						</div>
 					</div>
 				</section>
 				<section data-background-interactive data-preload
@@ -169,8 +187,8 @@ anecdotes ++
 
 			</section>
 			<section>
-				<section data-background-color="#fff">
-					<h1 style="color:#118ab2" class="r-fit-text">2. La sécurité défensive</h1>
+				<section data-background-color="#118ab2">
+					<h1 class="r-fit-text">2. La sécurité défensive</h1>
 				</section>
 				<section data-background-color="#118ab2">
 					<h3>Missions</h3>
@@ -180,12 +198,27 @@ anecdotes ++
 						<li>Réponse aux incidents</li>
 						<li>Chasse</li>
 					</ul>
+					<aside class="notes">
+						rythme plus long, continu (sauf chasse)
+					</aside>
 				</section>
 				<section data-background-color="#fff">
-					<img data-src="https://phoenixts.com/wp-content/uploads/2015/01/NIST-incident-response-lifecycle.bmp"
-						alt="nist incident handling steps" />
+					<h3>Le cadre du NIST</h3>
+					<img data-src="NIST-incident-response-lifecycle.bmp" alt="nist incident handling steps" />
+					<aside class="notes">
+						Étapes suivies pour la détection & Réaction
+						- préparation ex: exercice phishing, définission de règles de détection en fonction des risques
+						identifiés pour détecter attaques, mise en place de plan de sauvegarde
+						- détection & analyse ex: détection de l'exécution d'un malware & analyse des impacts (vol,
+						destruction, latéralisation, etc.)
+						- isolement, eradication et récupération ex: déconnexion de la machine du réseau ré-installation
+						du système et récupération des sauvegardes
+						- RETEX ex: ajouter à la détection d'autres éléments de l'attaque, réduire les faux positifs,
+						nouveaux exercices, etc.
+						TODO
+					</aside>
 				</section>
-				<section data-preload data-background-interactive=""
+				<section data-preload data-background-interactive
 					data-background-iframe="https://attack.mitre.org/matrices/enterprise/">
 					<aside class="notes">
 						outil utilisé aussi bien par le défensif que l'offensif
@@ -195,49 +228,31 @@ anecdotes ++
 					</aside>
 				</section>
 			</section>
-			<section>
-				<section data-background-color="#118ab2">
+			<section data-background-color="#003049">
+				<section>
 					<h1 class="r-fit-text">3. Le SOC</h1>
 					<em>Security Operations Center</em>
-				</section>
-				<section data-background-color="#000">
-					<p>collecte de journaux<br />définition de scénarios offensifs<br />création de règles de
-						détection<br />analyse des comportement<br />réaction aux incidents</p>
+					<aside class="notes">fait partie de la sécurité défensive</aside>
 				</section>
 				<section>
-					<h3>Collecte</h3>
-					<p><a target="_blank"
-							href="https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon">Sysmon</a></p>
+					<h3>Missions</h3>
+					<ul>
+						<li>collecte de journaux</li>
+						<li>définition de scénarios offensifs</li>
+						<li>création de règles de détection</li>
+						<li>analyse des comportement</li>
+						<li>réponse aux incidents</li>
+					</ul>
+					<aside class="notes">
+						cas d'usage / plans de réaction / fiches reflexe / logique de détection<br />
+						chasse au FP
+					</aside>
 				</section>
-				<section data-background-color="#fff">
-					<div class="r-stack r-stretch">
-						<div class="fragment fade-in-then-out">
-							<h3>Le SIEM</h3>
-							<em>Security Information and Event Management</em>
-							<div class="r-stretch">
-								<img data-src="/collecte siem.svg" />
-							</div>
-						</div>
-						<img class="fragment fade-in-then-out"
-							data-src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/780762c0-c2b5-4cc6-ab95-8782a0eeddbf.png"
-							alt="Azure Sentinel" />
-
-						<img class="fragment fade-in-then-out"
-							data-src="https://images.contentstack.io/v3/assets/bltefdd0b53724fa2ce/blt49f9d5bd0cd6f161/5d09f1b797f2babb5af91461/introducing-elastic-siem-3.jpg"
-							alt="elastic siem" />
-
-						<img class="fragment fade-in-then-out"
-							data-src="https://www.splunk.com/content/dam/splunk2/images/web-collateral/splunk-enterprise-security/security-posture.png"
-							alt="Splunk enterprise security" />
-
-						<img class="fragment fade-in-then-out"
-							data-src="https://mp.s81c.com/pwb-production/36bc5fb21dea628dd3f04814233fdd77/offering_db52d151-aa0f-4d88-8b27-27bbf2d71efe.jpg"
-							alt="ibm qradar" />
-
-						<img class="fragment fade-in-then-out"
-							data-src="https://res.cloudinary.com/logrhythm/image/upload/v1526927715/blog-images/2018-Q2/take-the-first-steps-towards-a-zero-trust-model-with-okta-automation-1.png"
-							alt="logrhythm" />
-
+				<section>
+					<h3>Le SIEM</h3>
+					<em>Security Information and Event Management</em>
+					<div class="r-stretch">
+						<img data-src="/collecte siem.svg" />
 					</div>
 					<aside class="notes">
 						Expliquer MFA
@@ -245,25 +260,33 @@ anecdotes ++
 						exemple solarwinds TODO détection MFA
 					</aside>
 				</section>
+				<section>
+					<h3>Splunk Enterprise Security</h3>
+					<img data-src="security-posture.png" alt="Splunk enterprise security" />
+				</section>
+				<section>
+					<h3>Collecte de Journaux</h3>
+					<p><a target="_blank"
+							href="https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon">Sysmon</a></p>
+				</section>
 				<section data-background-color="#fff">
 					<h3>Le SIRP</h3>
 					<em>Security Incident Response Platform</em>
-					<img class="r-stretch"
-						data-src="https://blogthehiveproject.files.wordpress.com/2017/02/current_cases.png" />
+					<img class="r-stretch" data-src="current_cases.png" />
 				</section>
 				<section data-background-color="#fff">
 					<h3>Le SOAR</h3>
 					<em>Security Orchestration Automation & Response</em>
-					<img class="r-stretch"
-						data-src="https://live.paloaltonetworks.com/t5/image/serverpage/image-id/26218iCB4297592CC5448F/image-size/large?v=1.0&px=999" />
+					<img class="r-stretch" data-src="xsoar_playbook.png" />
 				</section>
 			</section>
-			<section>
-				<section data-background-color="#118ab2">
+			<section data-background-color="#f2cc8f">
+				<section>
 					<h1 class="r-fit-text">4. Le CSIRT</h1>
 					<em>Computer Security Incident Response Team</em>
+					<aside class="notes">fait partie de la sécurité défensive</aside>
 				</section>
-				<section data-background-color="#fff">
+				<section>
 					<img class="r-stretch" data-src="/investigations.svg" />
 					<aside class="notes">
 						<p>Similaire à une enquête de police</p>
@@ -277,41 +300,33 @@ anecdotes ++
 						<p>collecte bas niveau (proche de la donnée) pour ne pas rater un attaquant. ex: rootkit</p>
 					</aside>
 				</section>
-				<section data-background-color="#118ab2">
+				<section>
 					<div class="r-stack">
 						<div class="fragment fade-in-then-out">
 							<h3>La collecte − Réseau</h3>
-							<div class="r-stretch"><img
-									data-src="https://static.wixstatic.com/media/3ea93c_bbd7d2838b4f4c5fb67b3912ca233a2a.png/v1/fill/w_419,h_113,al_c,q_85,usm_0.66_1.00_0.01/3ea93c_bbd7d2838b4f4c5fb67b3912ca233a2a.webp"
+							<div class="r-stretch"><img data-src="/3ea93c_bbd7d2838b4f4c5fb67b3912ca233a2a.webp"
 									alt="TAP" /></div>
 							<aside class="notes">NSA qui tape des câbles sous-marins</aside>
 						</div>
 						<div class="fragment fade-in-then-out">
 							<h3>L'analyse − Réseau</h3><!-- TODO demo -->
-							<div class="r-stretch"><img
-									data-src="https://www.bleepstatic.com/images/news/u/1109292/Feb%202019/Wireshark%203_0_0.PNG"
-									alt="wireshark" /></div>
+							<div class="r-stretch"><img data-src="Wireshark%203_0_0.PNG" alt="wireshark" /></div>
 						</div>
 						<div class="fragment fade-in-then-out">
 							<h3>Systèmes</h3>
-							<div class="r-stretch"><img
-									data-src="https://accessdata.com/assets/images/FTK-7.4-webinar_thumbnail.JPG"
-									alt="FTK" /></div>
+							<div class="r-stretch"><img data-src="FTK-7.4-webinar_thumbnail.JPG" alt="FTK" /></div>
 						</div>
 						<div class="fragment fade-in-then-out">
 							<h3>Mémoire</h3>
-							<div class="r-stretch"><img
-									data-src="TODO"
-									alt="Volatility" /></div>
+							<div class="r-stretch"><img data-src="TODO" alt="Volatility" /></div>
 						</div>
 						<div class="fragment fade-in-then-out">
 							<h3>Mobiles</h3>
-							<div class="r-stretch"><img
-									data-src="https://i1.wp.com/securityaffairs.co/wordpress/wp-content/uploads/2016/03/cellebrite-ufed-touch.png"
-									alt="UFED" /></div>
+							<div class="r-stretch"><img data-src="cellebrite-ufed-touch.png" alt="UFED" /></div>
 						</div>
 
 					</div>
+				</section>
 				<section data-auto-animate>
 					<h3 class="r-fit-text">La rétro ingénierie</h3>
 				</section>
@@ -322,58 +337,61 @@ anecdotes ++
 					<p>Quels indicateurs additionnels peuvent servir à l'investigation ?</p>
 					<p>Est-ce possible de casser la cryptographie utilisée ?</p>
 					<aside class="notes">
-						exemple anssi : casser crypto pour ransomware
-					</aside>
-				</section>
-				<section data-auto-animate>
-					<h3>La rétro ingénierie</h3>
-					<p>PEiD&nbsp;|&nbsp;CFF Explorer&nbsp;|&nbsp;<a target="_blank"
-							href="https://www.sweetscape.com/010editor/">010 Editor</a></p>
-					<p>radare2&nbsp;|&nbsp;ida&nbsp;|&nbsp;<a target="_blank"
-							href="https://github.com/cea-sec/miasm">Miasm</a></p>
-
-					<aside class="notes">
+						exemple anssi : casser crypto pour ransomware - de moins en moins efficace, attaquants ont
+						appris avec le temps
 					</aside>
 				</section>
 				<section>
 					<div class="r-stack r-stretch">
-						<img class="" data-preload
-							data-src="https://youritguy.files.wordpress.com/2010/08/sc2_installer_dvd.jpg" />
-						<img class="fragment fade-in" data-preload
-							data-src="https://upload.wikimedia.org/wikipedia/commons/9/9b/CutterUiScreenshot2.png" />
+						<h3>Outils</h3>
+						<div class="fragment fade-in-then-out">
+							<h3>PEiD</h3>
+							<img data-preload data-src="sc2_installer_dvd.jpg" />
+						</div>
+						<div class="fragment fade-in">
+							<h3>radare2 + Cutter</h3>
+							<img data-preload data-src="CutterUiScreenshot2.png" />
+						</div>
 					</div>
+					<aside class="notes">
+						lien : SOC & CSIRT alimentent la connaissance de la menace /
+						RE également nécessaire pour mieux connaître la menace (ex. capacité d'un rçgl)
+					</aside>
 				</section>
 
 
 			</section>
-			<section>
-				<section data-background-color="#1b2226">
+			<section data-background-color="#1b2226">
+				<section data-auto-animate>
 					<h1 class="r-fit-text">5. Le Renseignement d'intérêt cyber</h1>
 					<em>CTI : Cyber Threat Intelligence</em>
+					<aside class="notes">est à cheval entre la sécurité défensive et offensive. plus souvent défensif
+					</aside>
+				</section>
+				<section data-auto-animate>
+					<h3>Missions</h3>
+					<ul>
+						<li>Suivre les modes opératoires adverses</li>
+						<li>Classifier les capacités offensives</li>
+						<li>Synthétiser l'état de la menace</li>
+					</ul>
 				</section>
 				<section>
-					Missions TODO
+					<h3>Beaucoup de services en ligne de connaissance</h3>
+					<div class="r-stretch r-stack">
+						<!-- TODO essayer d'intégrer? maltego trouver une démo? -->
+						<a class="fragment fade-in-then-out" target="_blank"
+							href="https://www.virustotal.com/gui/">VirusTotal</a>
+						<a class="fragment fade-in-then-out" target="_blank" href="https://www.robtex.com/">robtex</a>
+						<a class="fragment fade-in-then-out" target="_blank"
+							href="https://app.any.run/submissions/">any.run</a>
+						<a class="fragment fade-in-then-out" target="_blank" href="https://www.maltego.com/">Maltego</a>
+					</div>
+					<aside class="notes">
+						Définir bac à sable
+					</aside>
 				</section>
 				<section>
-					<h3>Beaucoup d'outils d'analyse</h3>
-					<p><a target="_blank" href="https://www.virustotal.com/gui/">VirusTotal</a>&nbsp;|&nbsp;<a
-							target="_blank"
-							href="https://otx.alienvault.com/browse/global?include_inactive=0&sort=-modified&page=1&indicatorsSearch=">OTX
-							AlienVault</a><br /><a target="_blank"
-							href="https://censys.io/ipv4">Censys.io</a>&nbsp;|&nbsp;<a target="_blank"
-							href="https://whois.domaintools.com/">DomainTools</a>&nbsp;|&nbsp;<a target="_blank"
-							href="https://www.robtex.com/">robtex</a><br /><a target="_blank"
-							href="https://certstream.calidog.io/">CertStream</a>&nbsp;|&nbsp;<a target="_blank"
-							href="https://urlhaus.abuse.ch/">URLHaus</a><br /><a target="_blank"
-							href="https://app.any.run/submissions/">any.run</a>&nbsp;|&nbsp;<a target="_blank"
-							href="https://www.hybrid-analysis.com/submissions/sandbox/files">Hybrid
-							Analysis</a>&nbsp;|&nbsp;<a target="_blank"
-							href="https://www.joesandbox.com/analysispaged/0">JoeSandbox</a>&nbsp;|&nbsp;<a
-							target="_blank" href="https://cuckoosandbox.org/">Cuckoo</a><br /><a target="_blank"
-							href="https://www.maltego.com/">Maltego</a>
-					</p>
-				</section>
-				<section data-background-color="#1b2226">
 					<h3>la TIP</h3>
 					<div>
 						<em>Threat Intel Platform</em>
@@ -384,22 +402,28 @@ anecdotes ++
 							<li>Rapports</li>
 							<li>Techniques, Tactiques et Procédures (<em>TTP</em>)</li>
 						</ul>
-						<p>Exemples : <a target="_blank"
-								href="https://demo.opencti.io/dashboard">OpenCTI</a>&nbsp;|&nbsp;<a target="_blank"
-								href="https://www.threatq.com/">ThreatQuotient</a></p>
+						<p>Exemple : <a target="_blank" href="https://demo.opencti.io/dashboard">OpenCTI</a></p>
 					</div>
+					<aside class="notes">
+						TODO observables vs. marqueurs vs. ioc etc.
+					</aside>
 				</section>
 			</section>
-			<section>
+			<section data-background-color="#000">
 				<section>
 					<h1 class="r-fit-text">6. Comment tout ça s'assemble?</h1>
 				</section>
 				<section>
 					<h3>Le Cyber Fusion Center</h3>
+					<aside class="notes">
+						terme marketing qui traduit un besoin d'améliorer les échanges entre les équipes<br/>
+						soc & csirt alimentent la CTI avec leurs analyses<br/>
+						CTI alimente les autres équipes avec la connaissance (ex. détection par marqueurs, récupération des TTPs d'un MOA pour guider l'analyse d'un CSIRT)
+					</aside>
 				</section>
-				<section data-auto-animate data-background-color="#000">
+				<section data-auto-animate>
 					<h3>Et du coup la purple team?</h3>
-					<img data-src="https://hackernoon.com/images/f2apxyNoEZUNnwGm1NG6OQfqlJA2-fk26r36rt.gif" />
+					<img data-src="f2apxyNoEZUNnwGm1NG6OQfqlJA2-fk26r36rt.gif" />
 
 				</section>
 				<section data-auto-animate>
@@ -416,6 +440,9 @@ anecdotes ++
 						<li><span style="color:#1462b7;">Blue</span> : défense</li>
 						<li><span style="color:#fff;">White</span> : arbitres/pilotage</li>
 					</ul>
+					<aside class="notes">
+						Si on résume les 90 dernières minutes…
+					</aside>
 				</section>
 			</section>
 			<section data-background-color="#fff">
