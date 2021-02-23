@@ -59,8 +59,8 @@ anecdotes ++
 					<ul class="r-stretch" style="list-style:none;">
 						<li><img data-src="stick-man-2.svg" style="vertical-align:bottom;height:0.9em;" /> CEFCYSien
 							depuis 2021</li>
-						<li><img data-src="house.svg"
-								style="vertical-align:bottom;height:0.9em;" /> <i>Opérationnel</i> depuis 2015</li>
+						<li><img data-src="house.svg" style="vertical-align:bottom;height:0.9em;" /> <i>Opérationnel</i>
+							depuis 2015</li>
 						<li><img data-src="padlock-1.svg" style="vertical-align:bottom;height:0.9em;" /> Réponse aux
 							incidents chez <img data-src="ANSSI_Logo.svg" style="vertical-align:bottom;height:1em;" />
 						</li>
@@ -68,6 +68,10 @@ anecdotes ++
 							chez <img data-src="Logo_Isec-site-gauche.png" style="vertical-align:bottom;height:1em;" />
 						</li>
 					</ul>
+				</section>
+				<section data-background-color="#fff">
+					<h3>Référentiel du NIST</h3>
+					<img data-preload data-src="NIST.svg" alt="NIST" />
 				</section>
 				<section data-auto-animate data-background-color="#fff">
 					<h3>De quoi va-t-on parler ?</h3>
@@ -83,6 +87,7 @@ anecdotes ++
 							peut
 							surprendre.</em></p>
 					<aside class="notes">
+						méchants / gentils => attaquants / défenseurs
 						métiers évoluent : mais aussi définitions (red team & blue team définis par le gov US en 2015,
 						proposition de cherchers d'ajouter yellow en 2017)
 					</aside>
@@ -291,25 +296,29 @@ anecdotes ++
 				<section data-background-color="#4d908e">
 					<div class="r-stack">
 						<div class="fragment fade-in-then-out">
-							<h3>La collecte − Réseau</h3>
+							<h3>La collecte Réseau − Le TAP</h3>
 							<div class="r-stretch"><img data-src="3ea93c_bbd7d2838b4f4c5fb67b3912ca233a2a.webp"
 									alt="TAP" /></div>
 							<aside class="notes">NSA qui tape des câbles sous-marins</aside>
 						</div>
 						<div class="fragment fade-in-then-out">
-							<h3>L'analyse − Réseau</h3><!-- TODO demo -->
+							<h3>L'analyse Réseau − Wireshark</h3><!-- TODO demo -->
 							<div class="r-stretch"><img data-src="Wireshark%203_0_0.PNG" alt="wireshark" /></div>
+							<aside class="notes">
+								demo?
+							</aside>
 						</div>
 						<div class="fragment fade-in-then-out">
-							<h3>Systèmes</h3>
+							<h3>L'analyse système − FTK Imager</h3>
 							<div class="r-stretch"><img data-src="FTK-7.4-webinar_thumbnail.JPG" alt="FTK" /></div>
+							<aside class="notes">plus pour du travail de police (accès web, clés USB, etc.)</aside>
 						</div>
 						<div class="fragment fade-in-then-out">
-							<h3>Mémoire</h3>
-							<div class="r-stretch"><img data-src="TODO" alt="Volatility" /></div>
+							<h3>L'analyse mémoire − Volatility</h3>
+							<div class="r-stretch"><img data-src="Vol-2.png" alt="Volatility" /></div>
 						</div>
 						<div class="fragment fade-in-then-out">
-							<h3>Mobiles</h3>
+							<h3>La collecte de mobiles − Cellebrite UFED</h3>
 							<div class="r-stretch"><img data-src="cellebrite-ufed-touch.png" alt="UFED" /></div>
 						</div>
 
@@ -367,13 +376,13 @@ anecdotes ++
 				<section data-background-color="#1b2226">
 					<h3>Beaucoup de services en ligne de connaissance</h3>
 					<div class="r-stretch r-stack">
-						<!-- TODO essayer d'intégrer? maltego trouver une démo? -->
 						<a class="fragment fade-in-then-out" target="_blank"
 							href="https://www.virustotal.com/gui/">VirusTotal</a>
 						<a class="fragment fade-in-then-out" target="_blank" href="https://www.robtex.com/">robtex</a>
 						<a class="fragment fade-in-then-out" target="_blank"
 							href="https://app.any.run/submissions/">any.run</a>
-						<a class="fragment fade-in-then-out" target="_blank" href="https://www.maltego.com/">Maltego</a>
+						<a class="fragment fade-in-then-out" target="_blank" href="https://www.maltego.com/"><img
+							data-src="maltego.png" alt="maltego" /></a>
 					</div>
 					<aside class="notes">
 						Définir bac à sable
