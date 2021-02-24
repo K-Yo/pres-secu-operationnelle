@@ -83,13 +83,10 @@ anecdotes ++
 						<li>Le RIC</li>
 						<li>La fusion des services</li>
 					</ol>
-					<p style="font-size:large;"><em>NB : autant que possible cette présentation est en français ; ça
-							peut
-							surprendre.</em></p>
 					<aside class="notes">
-						méchants / gentils => attaquants / défenseurs
+						méchants / gentils => attaquants / défenseurs<br />
 						métiers évoluent : mais aussi définitions (red team & blue team définis par le gov US en 2015,
-						proposition de cherchers d'ajouter yellow en 2017)
+						proposition de chercheurs d'ajouter yellow en 2017)
 					</aside>
 				</section>
 				<section data-auto-animate data-background-color="#fff">
@@ -172,6 +169,11 @@ anecdotes ++
 								href="https://tools.kali.org/tools-listing">https://tools.kali.org/tools-listing</a>
 						</div>
 					</div>
+					<aside class="notes">
+						Metasploit : outil d'intrusion, de C2 et de latéralisation<br />
+						facilitateur<br />
+						base de donnée de vulnérabilités et astuces pour entrer dans les systèmes
+					</aside>
 				</section>
 				<section data-background-interactive data-preload
 					data-background-iframe="https://www.cobaltstrike.com/screenshots">
@@ -198,24 +200,23 @@ anecdotes ++
 					<h3>Le cadre du NIST</h3>
 					<img data-src="NIST-incident-response-lifecycle.bmp" alt="nist incident handling steps" />
 					<aside class="notes">
-						Étapes suivies pour la détection & Réaction
+						Étapes suivies pour la détection & Réaction<br />
 						- préparation ex: exercice phishing, définission de règles de détection en fonction des risques
-						identifiés pour détecter attaques, mise en place de plan de sauvegarde
+						identifiés pour détecter attaques, mise en place de plan de sauvegarde<br />
 						- détection & analyse ex: détection de l'exécution d'un malware & analyse des impacts (vol,
-						destruction, latéralisation, etc.)
+						destruction, latéralisation, etc.)<br />
 						- isolement, eradication et récupération ex: déconnexion de la machine du réseau ré-installation
-						du système et récupération des sauvegardes
+						du système et récupération des sauvegardes<br />
 						- RETEX ex: ajouter à la détection d'autres éléments de l'attaque, réduire les faux positifs,
-						nouveaux exercices, etc.
-						TODO
+						nouveaux exercices, etc.<br />
 					</aside>
 				</section>
 				<section data-preload data-background-interactive
 					data-background-iframe="https://attack.mitre.org/matrices/enterprise/">
 					<aside class="notes">
-						outil utilisé aussi bien par le défensif que l'offensif
-						présenter tactiques ~ kill chain, techniques, groupes, logiciels, mitigations
-						exemple avec du scan par exemple
+						outil utilisé aussi bien par le défensif que l'offensif<br />
+						présenter tactiques ~ kill chain, techniques, groupes, logiciels, mitigations<br />
+						exemple avec phishing<br />
 						participatif & évolutif (dernière grosse mise à jour fin 2020)
 					</aside>
 				</section>
@@ -247,9 +248,14 @@ anecdotes ++
 						<img data-src="collecte siem.svg" />
 					</div>
 					<aside class="notes">
-						Expliquer MFA
-						TODO voir si plateforme visio a un tableau blanc où je peux écrire (ex: MFA = multi factor auth)
-						exemple solarwinds TODO détection MFA
+						exemple phishing (mail avec pj)
+						<ul>
+							<li>collecte de journaux</li>
+							<li>définition de scénarios offensifs</li>
+							<li>création de règles de détection</li>
+							<li>analyse des comportement</li>
+							<li>réponse aux incidents</li>
+						</ul>
 					</aside>
 				</section>
 				<section data-background-color="#003049">
@@ -271,13 +277,17 @@ anecdotes ++
 				<section data-background-color="#4d908e">
 					<h1 class="r-fit-text">4. Le CSIRT</h1>
 					<em>Computer Security Incident Response Team</em>
-					<aside class="notes">fait partie de la sécurité défensive</aside>
+					<aside class="notes">
+						fait partie de la sécurité défensive<br />
+						cf. CERT
+					</aside>
 				</section>
 				<section data-background-color="#4d908e">
 					<img class="r-stretch" data-src="investigations.svg" />
 					<aside class="notes">
 						<p>Similaire à une enquête de police</p>
 						<ul>
+							exemple phishing pj condensat adresse expéditeur <b>pivot</b>
 							<li>Point d'entrée : événement anormal ou malveillant</li>
 							<li>Collecte d'éléments permettant l'analyse</li>
 							<li>Identification du fonctionnement de l'attaque (source / chemin d'attaque /
@@ -290,12 +300,6 @@ anecdotes ++
 				<section data-background-color="#4d908e">
 					<div class="r-stack">
 						<div class="fragment fade-in-then-out">
-							<h3>La collecte Réseau − Le TAP</h3>
-							<div class="r-stretch"><img data-src="3ea93c_bbd7d2838b4f4c5fb67b3912ca233a2a.webp"
-									alt="TAP" /></div>
-							<aside class="notes">NSA qui tape des câbles sous-marins</aside>
-						</div>
-						<div class="fragment fade-in-then-out">
 							<h3>L'analyse Réseau − Wireshark</h3><!-- TODO demo -->
 							<div class="r-stretch"><img data-src="Wireshark%203_0_0.PNG" alt="wireshark" /></div>
 							<aside class="notes">
@@ -303,17 +307,8 @@ anecdotes ++
 							</aside>
 						</div>
 						<div class="fragment fade-in-then-out">
-							<h3>L'analyse système − FTK Imager</h3>
-							<div class="r-stretch"><img data-src="FTK-7.4-webinar_thumbnail.JPG" alt="FTK" /></div>
-							<aside class="notes">plus pour du travail de police (accès web, clés USB, etc.)</aside>
-						</div>
-						<div class="fragment fade-in-then-out">
 							<h3>L'analyse mémoire − Volatility</h3>
 							<div class="r-stretch"><img data-src="Vol-2.png" alt="Volatility" /></div>
-						</div>
-						<div class="fragment fade-in-then-out">
-							<h3>La collecte de mobiles − Cellebrite UFED</h3>
-							<div class="r-stretch"><img data-src="cellebrite-ufed-touch.png" alt="UFED" /></div>
 						</div>
 
 					</div>
@@ -421,7 +416,9 @@ anecdotes ++
 					<p class="fragment">Réduction des silos entre les équipes</p>
 					<p class="fragment">Validation de cas d'usage</p>
 					<p class="fragment">Entrainement de la Red Team</p>
-					<!-- TODO -->
+					<aside class="notes">
+						exemple détection cobalt strike
+					</aside>
 				</section>
 				<section data-background-color="#000">
 					<ul>
